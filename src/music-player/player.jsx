@@ -26,7 +26,7 @@ function Player({ selectedMusic, addToFavorites, favorites }) {
             </Col>
             <Col xs={6} className='mt-1 px-4'>
               <Image src={next} className="player-image" />
-              <Image src={play} className="player-image mx-4" />
+              <Image src={play} className="player-image-play mx-4" />
               <Image src={previous} className="player-image" />
             </Col>
             <Col xs={3}>
