@@ -1,0 +1,99 @@
+@import 'variables';
+
+.App {
+    background-color: $bg-color;
+    min-height: 100vh;
+    width: 100vw;
+}
+.sidebar-text {
+    font-size: 20px;
+    line-height: 32px;
+    color: $light-color;
+    cursor: pointer;
+    // font-family: $font-stack;
+}
+.menu-title {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+    color: $light-color;
+}
+.search-input {
+    width: 100%;
+    background-color: $primary-color;
+    outline: none;
+    border: none;
+    height: 48px;
+    color: $light-color;
+    padding-left: 8px;
+    margin-top: 12px;
+}
+.music-image {
+    height: 48px;
+    width: 48px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.music-title {
+    font-size: 18px;
+    line-height: 24px;
+    color: $light-color;
+}
+.music-artist {
+    font-size: 14px;
+    line-height: 24px;
+    color: $light-color;
+    opacity: 50%;
+}
+.music-item {
+    cursor: pointer;
+}
+.music-item-selected {
+    background-color: $primary-color;
+    border-radius: 8px;
+}
+.title {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+    color: $light-color;
+}
+.artist-name {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    opacity: 50%;
+    color: $light-color;
+}
+.music-large-image {
+    height: 300px;
+    width: 300px;
+    border-radius: 8px;
+}
+.player-image {
+    height: 28px;
+    width: 28px;
+}
+.player-image-dots {
+    height: 21px;
+    color: $light-color;
+    width: 21px;
+    margin-top: 4px;
+    margin-left: -2px;
+}
+.player-image-sound {
+    height: 18px;
+    width: 18px;
+}
+.image-container {
+    background-color: $primary-color;
+    border-radius: 25px;
+    height: 40px;
+    width: 40px !important;
+}
+.image-container2 {
+    background-color: $light-color;
+    border-radius: 25px;
+    height: 40px;
+    width: 40px !important;
+}
