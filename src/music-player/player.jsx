@@ -20,11 +20,17 @@ function Player({ selectedMusic, addToFavorites, favorites }) {
         <Container fluid className="pt-4">
           <Row>
             <Col xs={3}>
-              <Container className="image-container2 pt-1" onClick={addToFavorites}>
-                <Image src={favorites.includes(selectedMusic) ? fav: notfav} className="player-image-dots" />
+              <Container
+                className="image-container2 pt-1"
+                onClick={addToFavorites}
+              >
+                <Image
+                  src={favorites.includes(selectedMusic) ? fav : notfav}
+                  className="player-image-dots"
+                />
               </Container>
             </Col>
-            <Col xs={6} className='mt-1 px-4'>
+            <Col xs={6} className="mt-1 px-4">
               <Image src={next} className="player-image" />
               <Image src={play} className="player-image-play mx-4" />
               <Image src={previous} className="player-image" />

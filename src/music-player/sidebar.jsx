@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Image } from "react-bootstrap";
 import spotifyLogo from "../assets/spotify-logo.svg";
 
-function MusicSidebar({selectedMenu, setSelectedMenu, sidebarList}) {
+function MusicSidebar({ selectedMenu, setSelectedMenu, sidebarList }) {
   const handleChange = (item) => {
     setSelectedMenu(item);
   };

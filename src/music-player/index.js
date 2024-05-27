@@ -72,7 +72,7 @@ function MusicPlayer() {
     handleRecentPlayed();
     handleFavorites();
   }, []);
-  console.log('favs',favorites)
+  console.log("favs", favorites);
   return (
     <Container fluid>
       <Row>

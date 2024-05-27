@@ -9,7 +9,7 @@ function MusicList({
 }) {
   const [search, setSearch] = useState("");
   const [filteredList, setFilteredList] = useState(musicList);
-console.log('musicList',musicList)
+  console.log("musicList", musicList);
   const debounce = (cb, delay = 1000) => {
     let timer;
     return (...args) => {
@@ -25,14 +25,17 @@ console.log('musicList',musicList)
   const handleChangeMusic = (music) => {
     setSelectedMusic(music);
   };
-  useEffect(()=>{
-    if(search == ''){
-        setFilteredList(musicList)
+  useEffect(() => {
+    if (search == "") {
+      setFilteredList(musicList);
+    } else {
+      setFilteredList(
+        musicList.filter((item) =>
+          item.title.toLowerCase().includes(search.toLowerCase())
+        )
+      );
     }
-    else {
-        setFilteredList(musicList.filter(item => item.title.toLowerCase().includes(search.toLowerCase())))
-    }
-  },[search,musicList]);
+  }, [search, musicList]);
   //   const fetchMusic = async () => {
   //     try {
   //       const { data } = await axios.get(
@@ -66,7 +69,10 @@ console.log('musicList',musicList)
         <Container
           fluid
           className={`${
-            music.title == selectedMusic.title && selectedMenu.title != 'Recently Played'? "music-item-selected" : "music-item"
+            music.title == selectedMusic.title &&
+            selectedMenu.title != "Recently Played"
+              ? "music-item-selected"
+              : "music-item"
           } mb-2 pt-3`}
           onClick={() => handleChangeMusic(music)}
         >
